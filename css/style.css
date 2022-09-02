@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap');
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+
+/*============================================================== My Code =====================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap');
+
+:root {
+    box-sizing: border-box;
+    --blue-color: rgb(5, 5, 246);
+    --red-color: rgb(243, 5, 5);
+    --paragraph-color: grey;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--blue-color), var(--red-color));
+    border-radius: 21px;
+}
+
+*,::before,::after{
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Mulish' sans-serif;
+    background: rgb(247, 247, 247, .8);
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 777;
+}
+
+p {
+    font-weight: 560;
+    font-size: 1rem;
+    color: var(--paragraph-color);
+}
+
+a {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+/*======================================================= Home Section Starts ===============================================================*/
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(19, 146, 242, 0.9), rgba(19, 146, 242, 0.9)) ,url('.//silhouette-business-people-urban-scene-concepts-group-46666470.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    color: #fff;
+}
+
+ul li a {
+    color: #fff;
+}
+
+.navbar-nav .nav-item{
+    margin: 0 10px;
+}
+
+nav.stickyadd{
+    background-color: rgba(255, 255, 255,0.9);
+    transition: all 0.5;
+}
+
+nav.stickyadd .nav-item .nav-link{
+    color: rgba(0,0,0, .7);
+}
+
+nav.stickyadd .navbar-brand{
+    color: rgba(0,0,0, .7);
+}
+
+nav.stick{
+    transition: all 0.5s;
+}
+
+.hamburger{
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.hamburger.whenscrolled{
+    color: #fff;
+}
+
+
+/*======================================================= Home Section Ends ===============================================================*/
+
+
+
+/*======================================================= About Section Starts ===============================================================*/
+
+.about-class{
+    margin-top: -200px;
+}
+
+.about-content{
+    background: linear-gradient(135deg, var(--blue-color), var(--red-color));
+}
+
+.wrap{
+    margin-top: 40px;
+    padding: 30px;
+}
+
+.wrap p, .wrap h2{
+    color: #fff;
+}
+
+.wrap h2{
+    margin-bottom: 28px;
+}
+
+/*======================================================= About Section Ends ===============================================================*/
+
+
+/*======================================================= Service Section Starts ===============================================================*/
+.service-class .iosvg{
+    height: 21px;
+    width: 21px;
+    background: linear-gradient(var(--red-color), black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.service-show{
+    text-align: center;
+}
+
+.service-class .card{
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+/*======================================================= Service Section Ends ===============================================================*/
+
+
+/*======================================================= team-Class Section Starts ===============================================================*/
+
+.team-class{
+    z-index: 3;
+    padding: 100px;
+
+}
+
+.team-class img {
+    z-index: 2;
+}
+
+.team-class .bg-white{
+    background: #fff;
+}
+
+.team-content{
+    padding: 14px;
+}
+
+.team-class .box{
+    position: relative;
+    z-index: 1;
+}
+
+.team-class .box::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -21px;
+    left: -21px;
+    z-index: -1;
+    background: linear-gradient(135deg, var(--blue-color), var(--red-color));
+}
+
+/*======================================================= Team-Class Section Ends ===============================================================*/
+
+
+
+/*======================================================= Projects Section Starts ===============================================================*/
+
+.projects-class i{
+    font-size: 49px;
+    background: linear-gradient(var(--red-color), black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 20px 0 5px 20px;
+}
+
+.projects-class .col-lg-3{
+    padding: 0;
+}
+
+.projects-class .card{
+    margin-right: 7px;
+}
+
+
+/*======================================================= Projects Section Ends ===============================================================*/
+
+
+
+/*======================================================= Contac Section Starts ===============================================================*/
+
+.contact-class .bg-contact{
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(rgba(74,118,237,0.9), rgba(74,118,237,0.9)), url('.//Trap-Sheet-6.png');
+    background-position: 200 200;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.contact-content{
+    margin-top: -20vh;
+}
+
+.contact-class form{
+    background: #fff;
+    padding: 100px;
+}
+
+.contact-class .contact-addr{
+    background: linear-gradient(135deg, var(--red-color), var(--blue-color));
+    padding: 90px;
+    color: #fff;
+}
+
+
+.contact-class .contact-addr p{
+    color: #fff;
+    margin: 21px 0;
+}
+
+.contact-class .social-icon{
+    display: table;
+}
+
+.contact-class .social-icon i{
+    display: table-cell;
+    font-size: 21px;
+    width: 1%;
+}
+
+
+
+/*======================================================= Contact Section Ends ===============================================================*/
+
+
+
+/*======================================================= Footer Section Starts ===============================================================*/
+
+footer{
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background: rgb(19, 19, 19);
+}
+
+footer p{
+    color: #fff;
+}
+
+/*======================================================= Footer Section Ends ===============================================================*/
+
+
+
+
+/*======================================================= Media Q Stars ===============================================================*/
+
+@media screen and (max-width: 575px) {
+    h1{
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    h2{
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    .about-class{
+        margin-top: 0;
+    }
+
+    .service-class{
+        text-align: center;
+    }
+
+    .service-content{
+        margin-bottom: 49px;
+    }
+
+    .team-class{
+        text-align: center;
+        padding: 0;
+    }
+
+    .team-class h2{
+        text-align: center;
+    }
+
+    .team-class .team-content{
+        margin-top: 49px;
+    }
+
+    .projects-class{
+        text-align: center;
+    }
+
+    .projects-class .card{
+        margin-right: 0;
+        margin-bottom: 28px;
+    }
+
+    .projects-class .col-lg-3{
+        padding: 14px;
+    }
+
+    .contact-class{
+        text-align: center;
+    }
+
+    .contact-class form{
+        padding: 40px;
+    }
+
+    .contact-class .contact-addr{
+        padding: 40px;
+        text-align: center;
+    }
+
+    footer{
+        height: 80px;
+        line-height: 80px;
+    }
+}
+
+/*======================================================= Media Q Ends ===============================================================*/
